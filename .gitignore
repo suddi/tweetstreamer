@@ -1,7 +1,9 @@
 # Directories
 coverage
 temp
+dist
 
 # Files
 settings.py
 *.pyc
+MANIFEST
