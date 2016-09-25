@@ -21,7 +21,6 @@ def auth(consumer_key, consumer_secret, access_key, access_secret):
 def listen(connection, track, on_status, on_error, on_timeout, on_disconnect):
     listener = Listener(connection['api'], on_status, on_error, on_timeout)
     stream = Stream(connection['auth'], listener)
-    print 'About to stream'
     try:
         stream.filter(track=track)
     except Exception as e:

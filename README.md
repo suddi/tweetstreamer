@@ -4,7 +4,7 @@
 [![PyPI](https://img.shields.io/pypi/v/tweetstreamer.svg?maxAge=2592000)](https://pypi.python.org/pypi/tweetstreamer)
 [![license](https://img.shields.io/github/license/suddi/tweetstreamer.svg?maxAge=2592000)](https://github.com/suddi/tweetstreamer)
 
-A Tweepy streamer to collect tweets from Twitter's Streaming API based on criteria
+A Tweepy streamer to collect tweets from Twitter's Streaming API based on criteria, with an extremely simple API
 
 ## Requirements
 
