@@ -2,6 +2,8 @@
 coverage
 temp
 dist
+build
+*.egg-info
 
 # Files
 settings.py
