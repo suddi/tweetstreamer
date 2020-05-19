@@ -1,10 +1,11 @@
-# -*- coding: utf-8 -*-
+# pylint: disable-msg=redefined-outer-name,too-many-arguments,broad-except
 
 from tweepy import API, OAuthHandler, StreamListener
 from tweepy.streaming import Stream
 
 class Listener(StreamListener):
     def __init__(self, api, on_status, on_error, on_timeout):
+        super().__init__(self)
         self.api = api
         self.on_status = on_status
         self.on_error = on_error
@@ -24,6 +25,6 @@ def listen(connection, track, on_status, on_error, on_timeout, on_disconnect):
     try:
         stream.filter(track=track)
     except Exception as e:
-        print e
+        print(e)
         on_disconnect(e)
         stream.disconnect()
